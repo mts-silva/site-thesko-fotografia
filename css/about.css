@@ -220,3 +220,10 @@
     }
 } 
 
+ @media (max-width: 330px) {
+    .sect-about-container {
+        height: 1500px;
+    }
+}  
+
+
