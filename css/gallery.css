@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sect-gallery {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+  
+}
+
+input {
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+    bottom: 10px;
+    right: 15px;
+    display: flex; 
+    justify-content: right;
+    padding: 10px;
+}
+
+.sect-gallery label {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.sect-gallery label:hover {
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+#gallery div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s all;
+}
+
+#gallery img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Abaixo está a estilização do conteúdo que aparece por cima da imagem*/
+.gallery-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to right, rgba(0,0,0,0.99), rgba(0,0,0,0.0));
+}
+
+.gallery-content-img {
+    margin-top: 30%;
+    height: 20%;
+    width: 20%;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.gallery-content-img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.gallery-content-h2 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin: 25px;
+}
+
+.gallery-content-h2 h2 {
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Neucha', cursiva;
+    font-size: 35px;
+    animation: h2-animation 2s linear infinite;
+    transition: 0.4s all;
+}
+
+@keyframes h2-animation {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0px 1px 1px rgba(255,255,255));
+    }
+    50% {
+        transform: scale(1.02);
+        filter: drop-shadow(0px 7px 5px rgba(255,0,0));
+    }
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0px 1px 1px rgba(255,255,255));
+    }
+    
+}
+
+
+.gallery-content-paragraph {
+    margin-top: 25px;
+    width: 100%;
+    height: 30%; 
+}
+
+.gallery-content-paragraph p{
+    padding: 10px;
+    line-height: 32px;
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+}
+
+.gallery-content-link {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.gallery-content-link a {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 48px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
+    transition: 0.4s all;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Neucha', cursiva;
+}
+
+.gallery-content-link a:hover {
+    background: rgba(255, 0, 0, 0.5);
+    color: white;
+}
+
+/* na gallery_content p termina a estilização do conteúdo que está acima da imagem */
+
+#radio1:checked ~ #gallery div:nth-child(1),
+#radio1:checked ~ .navigation label#label-1
+{
+    animation: transition 10s linear infinite;
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: none;
+}
+
+#radio2:checked ~ #gallery div:nth-child(2),
+#radio2:checked ~ .navigation label#label-2
+{
+    animation: transition 10s linear infinite;
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: none;
+}
+
+#radio3:checked ~ #gallery div:nth-child(3),
+#radio3:checked ~ .navigation label#label-3
+{ 
+    animation: transition 10s linear infinite;
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: none;
+}
+
+
+#radio4:checked ~ #gallery div:nth-child(4),
+#radio4:checked ~ .navigation label#label-4
+{
+    animation: transition 10s linear infinite;
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: none;
+}
+
+#radio5:checked ~ #gallery div:nth-child(5),
+#radio5:checked ~ .navigation label#label-5
+{
+    animation: transition 10s linear infinite;
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: none;
+}
+
+
+#radio6:checked ~ #gallery div:nth-child(6),
+#radio6:checked ~ .navigation label#label-6
+{
+    animation: transition 10s linear infinite;
+    background: linear-gradient(to right,rgba(255, 255,255 ,0.5),rgba(255, 255, 255, 0.5));
+    border: none;
+}
+
+#h2-gallery {
+    color: rgba(255,255,255);
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    bottom: 40px;
+    font-size: 50px;
+    animation: h2-arrow-animation2 0.4s ease-out 1, h2-arrow-animation 1s 0.6s linear infinite;
+  
+}
+
+@keyframes h2-arrow-animation {
+    0% {
+        transform: translateY(0px);
+        filter: drop-shadow(0px 1px 1px rgba(255,255,255));
+    }
+    50% {
+        transform: translateY(10px);
+        filter: drop-shadow(0px 7px 5px rgba(255,0,0));
+    }
+    100% {
+        transform: translateY(0px);
+        filter: drop-shadow(0px 1px 1px rgba(255,255,255));
+    }
+    
+}
+
+@keyframes h2-arrow-animation2 {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+        visibility: visible;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}
+
+@keyframes transition {
+    0% { opacity:0.1 ; visibility: visible;}
+    0.1% {background:linear-gradient(to right rgba(0, 0, 0, 0.2));}
+    0.2% {background:linear-gradient(to right rgba(0, 0, 0, 0.3));}
+    0.3% {background:linear-gradient(to right rgba(0, 0, 0, 0.4));}
+    0.4% {background:linear-gradient(to right rgba(0, 0, 0, 0.5));}
+    0.5% {background:linear-gradient(to right rgba(0, 0, 0, 0.6));}
+    0.7% {background:linear-gradient(to right rgba(0, 0, 0, 0.7));}
+    0.8% {background:linear-gradient(to right rgba(0, 0, 0, 0.8));}
+    0.9% {background:linear-gradient(to right rgba(0, 0, 0, 0.9));}
+    1% {background:linear-gradient(to right rgba(0, 0, 0, 1));}
+    2.5% {opacity: 1;}
+    10% {opacity: 1;}
+    99% {opacity: 1;}
+    100% {background:linear-gradient(to right rgba(0, 0, 0, 0.0));visibility: visible; opacity: 1;}
+}
+
+
+
+
+
+

@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-main-color: linear-gradient(to right,rgba(22,22,30,0.9),rgba(22,22,30,0.9));
+    --btn-color-hover: rgba(255,255,255,1);
+    --text-color:rgba(255,255,255,1);
+    
+}
+
+header {
+    top: 0;
+    width: 100vw;
+    height: 112px;
+    background: var(--background-main-color);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: var(--Text_Color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    border-bottom: 3px outset rgba(255,255,255,0.1);
+    z-index: 10;
+}
+
+.nav-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.div-mobile-img {
+    height: 100%;
+    width: 15%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-mobile-img img {
+    max-width: 70%;
+    min-height: 50%;
+    object-fit: cover;
+}
+
+.nav-mobile label {
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    transition: .4s all;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-mobile input {
+    display: none;
+}
+
+.btn-mobile:hover {
+    color: var(--btn-color-hover);
+}
+
+.nav-mobile-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-mobile-list li {
+    font-size: 17px;
+}
+
+.nav-mobile-list a {
+    padding: 15px;
+    padding-bottom: 43px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+}
+
+.nav-mobile-list a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid rgba(255,0,0,0.7);
+    color: rgba(255,255,255);
+}
+
+@media (max-width: 999px) {
+
+    header {
+        height: 90px;
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        border-bottom: 2px outset rgba(255,255,255,0.1);
+    }
+
+    #btn_Topo {
+        opacity: 0;
+    }
+
+    ul.nav-mobile-list {
+        z-index: 10;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(rgba(22,22,30,0.99),rgba(22,22,30,0.99));
+        transform: translateX(100%);
+        transition: 0.4s ease-in;
+    }
+    .nav-mobile-list li {
+        margin: 0;
+        opacity:0;
+    }
+
+    .nav-mobile-list li a  {
+        padding-bottom:0px ;
+        
+    }
+
+    .nav-mobile-list a:hover {
+        border: none;
+        color: rgba(255,0,0,0.7);
+    }
+
+    .nav-mobile label{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        right: 10%;
+    }
+
+    .btn-mobile:hover {
+        color: rgba(255,0,0,0.8);
+    }
+
+    .div-mobile-img {
+        position: absolute;
+        left: 10%;
+        height: 100px;
+        width: 150px;
+    }
+
+    .div-mobile-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+#check:checked ~ ul {
+    transform: translateX(0);
+}
+
+#check:checked ~ label {
+    color: rgba(255,0,0,0.5);
+    transform: rotatex(180deg) scale(0.8);
+}
+
+
+#check:checked ~ ul li:nth-child(1) {
+    animation: ul-delay-li 0.6s linear 0.4s 1 both;
+    opacity: 1;
+}
+
+#check:checked ~ ul li:nth-child(2) {
+    animation: ul-delay-li 0.6s linear 0.4s 1 both;
+    opacity: 1;
+}
+
+#check:checked ~ ul li:nth-child(3) {
+    animation: ul-delay-li 0.6s linear 0.4s 1 both;
+    opacity: 1;
+}
+
+#check:checked ~ ul li:nth-child(4) {
+    animation: ul-delay-li 0.6s linear 0.4s 1 both;
+    opacity: 1;
+}
+
+#check:checked ~ ul li:nth-child(5) {
+    animation: ul-delay-li 0.6s linear 0.4s 1 both;
+    opacity: 1;
+}
+
+}
+
+@keyframes ul-delay-li {
+    0% {
+        transform: translateX(4px);
+    }
+    25% {
+        transform: translateX(3px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@media (max-height: 470px) {
+    ul.nav-mobile-list {
+        height: 80vh;
+    }
+
+}
+
+
+

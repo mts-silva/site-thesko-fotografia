@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color-footer: rgba(22,22,30,1);
+    --border-color-footer-ico:rgba(255,255,255,0.2);
+}
+
+.footer {
+    margin-top: 113px;
+    max-width: 100%;
+    width: 100vw;
+    height: 375px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--background-color-footer);
+    transition: 0.4s all;
+}
+
+.footer .footer-content {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-content .footer-content-label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer .footer-content .footer-content-label div {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.footer .footer-content-label label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+
+.footer .footer-content-label label i {
+    color: rgba(255,255,255,1);
+    margin-bottom: 7px;
+}
+
+.footer .footer-content .social-ico {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.copyright {
+    margin-top: 0px;
+    width: 100%;
+    height: 113px;
+    display: flex;
+}
+
+.copyright div  {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 100%;
+    width: 88vw;
+    border-top: 1px solid wheat;
+    color: white;
+    font-size: 20px;   
+}
+
+.copyright div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 999px) {
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer .footer-content .footer-content-label div {
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 415px) {
+
+    .footer .footer-content .footer-content-label {
+        flex-direction: column;
+    }
+    .footer .footer-content .footer-content-label div {
+        width: 100%;
+        height: 50%;
+    }
+    .copyright div {
+        flex-direction: column;
+    }
+}

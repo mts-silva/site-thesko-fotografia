@@ -1,0 +1,147 @@
+@charset "UTF-48";
+
+:root {
+    
+    --Background_Main_Color: rgba(255,255,255,1);
+    --Text_Color: white;
+    --Background_Footer_Color: rgba(22,22,35,1);
+    --Background_Header_Color: rgba(22,22,35,1);  
+    --border-color:  rgba(255, 0, 0, 0.2);
+    --Border_Color2:  rgba(255, 255, 255, 0.2);
+    --Border_Color3:  rgba(255, 0, 0, 0.5);
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 14vh;
+}
+
+.myNav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    list-style: none;
+}
+
+.myNav ul li {
+    margin-left: 25px;
+}
+
+.myNav a {
+    display: flex;
+    color: var(--corTexto);
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+.myNav a:hover {
+    text-decoration: underline;
+}
+
+#btn_Topo {
+    z-index: -1;
+    color: rgba(255, 0, 0);
+    position: fixed;
+    display: inline-flex;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    opacity: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    background: linear-gradient(to right,rgba(255,255,255),rgba(255,255,255));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0);
+    animation: arrow-animation 0.4s ease-out 1;
+}
+
+#btn_Topo:hover { 
+    background:rgba(255,0,0,0.7);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#btn_Topo b {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+}
+
+@keyframes arrow-animation {
+    0% {
+        transform: translateY(80px);
+        
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+/* 
+@keyframes title-about-animation {
+    0% {
+        text-shadow: 0px 0px 0px rgba(255, 0, 0, 1);
+    }
+    35% {
+        text-shadow: 0px 0px 0px rgba(255, 0, 0, 1);
+    }
+    50% {
+        text-shadow: 1px 1px 5px rgba(255, 0, 0, 1);
+    }
+    55% {
+        text-shadow:1px 1px 10px rgba(255, 0, 0, 1);
+    }
+    60% {
+        text-shadow:1px 1px 15px rgba(255, 0, 0, 1);
+    }
+    65% {
+        text-shadow:1px 1px 20px rgba(255, 0, 0, 1);
+    }
+    70% {
+        text-shadow:1px 1px 25px rgba(255, 0, 0, 1);
+    }
+    80% {
+        text-shadow:1px 1px 20px rgba(255, 0, 0, 1);
+    }
+    85% {
+        text-shadow:1px 1px 15px rgba(255, 0, 0, 1);
+    }
+    90% {
+        text-shadow:1px 1px 10px rgba(255, 0, 0, 1);
+    }
+    95% {
+        text-shadow:1px 1px 5px rgba(255, 0, 0, 1);
+    }
+    100% {
+        text-shadow:( 0px 0px 0px rgba(255, 0, 0, 1));
+    }
+    
+}  */
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-image: linear-gradient(to right, rgba(22,22,30), rgba(22, 22, 30));
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--border-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 0, 0, 0.7);
+    transition: 0.5s;
+}

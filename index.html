@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/Ico/Ico.ico" type="image/x-icon">
+   <title>Thesko Fotografia</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/gallery.css">
+   <link rel="stylesheet" href="css/header-mobile.css">
+   <link rel="stylesheet" href="css/style-social-ico.css">
+   <link rel="stylesheet" href="css/album.css">
+   <link rel="stylesheet" href="css/testimonial.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <style>
+     @import url('https://fonts.googleapis.com/css2? family= Permanent+Marker & família= Rancho &family= Rock+Sal & family= Tapestry & display=swap');
+   </style>
+   
+</head>
+
+<body>
+<header>
+
+<nav class="nav-mobile" id="nav-mobile">
+     
+      <div class="div-mobile-img">
+         <a href="index.html" class="div-mobile-logo">
+            <img src="img/Ico/Ico.ico" alt="thesko Fotografia">
+         </a>
+      </div>
+   
+         <input type="checkbox" id="check">
+         <label class="btn-mobile" for="check"><i class="fas fa-bars"></i></label>
+   
+         <ul class="nav-mobile-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html" rel="next">Contato</a></li>
+            <li><a href="https://api.whatsapp.com/message/RRPM3F7KBYSIN1?autoload=1&app_absent=0" target="_blank" >Orçamento</a></li>
+            <li><a href="#album">Álbuns</a></li>
+            <li><a href="sobre.html" rel="next">Sobre</a></li>
+         </ul>
+</nav>
+
+</header>  
+
+<main> 
+   
+<section class="sect-gallery">
+
+      <input type="radio" name="radio" id="radio1" checked>
+      <input type="radio" name="radio" id="radio2">
+      <input type="radio" name="radio" id="radio3">
+      <input type="radio" name="radio" id="radio4">
+      <input type="radio" name="radio" id="radio5">
+      <input type="radio" name="radio" id="radio6">
+      
+         <div id="gallery">
+            
+            <div id="slide1"><img src="img/gallery/Slider1.jpg" alt=""></div>
+            <div id="slide2"><img src="img/gallery/Slider2.jpg" alt=""></div>
+            <div id="slide3"><img src="img/gallery/Slider3.jpg" alt=""></div>
+            <div id="slide4"><img src="img/gallery/Slider4.jpg" alt=""></div>         
+            <div id="slide5"><img src="img/gallery/Slider5.jpg" alt=""></div>
+            <div id="slide6"><img src="img/gallery/Slider6.jpg" alt=""></div>
+   
+            <i id="h2-gallery" class="fa fa-angle-down"></i>
+         </div>
+   
+         <div class="navigation">
+            <label id="label-1" for="radio1"></label>
+            <label id="label-2" for="radio2"></label>
+            <label id="label-3" for="radio3"></label>
+            <label id="label-4" for="radio4"></label>
+            <label id="label-5" for="radio5"></label>
+            <label id="label-6" for="radio6"></label>
+         </div>
+
+</section>  
+
+<section id="album" class="albuns">
+
+         <div class="title-album"><h2>Álbuns</h2></div>
+   
+         <button class="btn-prev" id="btn_prev" onclick="btn_prev()"><i class='fas fa-angle-left'></i></button>
+         <button class="btn-next" id="btn_next" onclick="btn_next()"><i class='fas fa-angle-right'></i></button>
+   
+         <input  type="radio" name="album" id="album1" checked>
+         <input  type="radio" name="album" id="album2">
+         <input  type="radio" name="album" id="album3">
+         <input  type="radio" name="album" id="album4">
+         <input  type="radio" name="album" id="album5">
+         <input  type="radio" name="album" id="album6">
+ 
+
+         <div class="container" id="card1">
+            <div class="card" >
+               
+               <div class="stripe-album"></div><div class="left-album"></div><div class="stripe-2-album"></div>
+                
+               <div class="content">
+                  <div class="img-album"><img src="img/gestante_2.jpg" alt=""></div>
+                  <div class="name-album"><h3>Gestante</h3></div>
+                  <div class="link-album"><a href="#"></i></a></div>
+               </div>
+
+            </div>
+         </div>
+
+         <div class="container" id="card2">
+            <div class="card">
+               
+               <div class="stripe-album"></div><div class="left-album"></div><div class="stripe-2-album"></div>
+               
+               <div class="content">
+                  <div class="img-album"><img src="img/Slider13.jpg" alt=""></div>
+                  <div class="name-album"><h3>Feminino</h3></div>
+                  <div class="link-album"><a href="#"></i></a></div>
+               </div>
+
+            </div>
+         </div>  
+
+         <div class="container" id="card3">
+            <div class="card">
+
+               <div class="stripe-album"></div><div class="left-album"></div><div class="stripe-2-album"></div>
+                
+               <div class="content">
+                  <div class="img-album"><img src="img/ana-isaque.jpg" alt=""></div>
+                  <div class="name-album"><h3>Infantil</h3></div>
+                  <div class="link-album"><a href="#"></a></div>
+               </div>
+
+            </div>
+         </div>
+            
+         <div class="container" id="card4">
+            <div class="card">
+
+               <div class="stripe-album"></div><div class="left-album"></div> <div class="stripe-2-album"></div>
+
+                <div class="content">
+                  <div class="img-album"><img src="img/casamento.jpg" alt=""></div>
+                  <div class="name-album"><h3>Casamento</h3></div>
+                  <div class="link-album"><a href="#"></a></div>
+               </div>
+
+            </div>
+         </div>
+   
+         <div class="container" id="card5">
+            <div class="card" >
+
+               <div class="stripe-album"></div><div class="left-album"></div> <div class="stripe-2-album"></div>
+
+                <div class="content">
+                  <div class="img-album"><img src="img/Slider9.jpg" alt=""></div>
+                  <div class="name-album"><h3>Família</h3></div>
+                  <div class="link-album"><a href="#"></a></div>
+               </div>
+            </div>
+         </div> 
+</section>
+
+<section id ="testimonial" class="testimonial">
+
+   <div class="testimonial_title"><h2>Depoimentos</h2></div>
+
+   <div class="testimonial_content" id="testimonial_content_1" >
+      <div class="testimonial_img"><img src="img/avatar.png" alt=""></div>
+      <div class="testimonial_name_client"><h2>Fulano</h2></div>
+      <div class="testimonial_paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, architecto. Exercitationem tempore vel alias repellat facilis. Ratione eaque esse, repellat expedita iure impedit, veniam repudiandae, maxime ex dolorum temporibus obcaecati?</p></div>
+   </div>
+
+   <div class="testimonial_content" id="testimonial_content_2">
+      <div class="testimonial_img"><img src="img/avatar_2.png" alt=""></div>
+      <div class="testimonial_name_client"><h2>Ciclano</h2></div>
+      <div class="testimonial_paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, architecto. Exercitationem tempore vel alias repellat facilis. Ratione eaque esse, repellat expedita iure impedit, veniam repudiandae, maxime ex dolorum temporibus obcaecati?</p></div>
+   </div>
+
+   
+   <div class="testimonial_content" id="testimonial_content_3">
+      <div class="testimonial_img"><img src="img/avatar_3.png" alt=""></div>
+      <div class="testimonial_name_client"><h2>Beltrano</h2></div>
+      <div class="testimonial_paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, architecto. Exercitationem tempore vel alias repellat facilis. Ratione eaque esse, repellat expedita iure impedit, veniam repudiandae, maxime ex dolorum temporibus obcaecati?</p></div>
+   </div>
+
+</section>
+
+</main>
+
+<footer id="myFooter" class="footer">
+   
+      <div class="footer-content">
+
+         <div class="footer-content-label">
+        
+            <div><label><i class="fa fa-envelope" aria-hidden="true"></i>theskofotografo@gmail.com</label></div>
+            <div><label><i class="fa-brands fa-whatsapp"></i>(62) 9 9556-8608</label></div>
+         </div>
+      </div>
+   
+   <div class="footer-content">
+
+      <div class="social-ico">
+         <a href="https://pt-br.facebook.com/theskofotografia/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+         <a href="https://www.instagram.com/theskofotografia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.tiktok.com/@theskofotografia" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+         <a href="https://www.youtube.com/channel/UCD5k4Q9t51xMLryoAbbDc7Q" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+         <a href="https://api.whatsapp.com/message/RRPM3F7KBYSIN1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+   </div>
+
+   <div class="copyright">
+      <div>
+         <p>Thesko Fotografias</p>
+         <p>criado por Mateus Silva ©</p>
+      </div>
+   </div>
+
+</footer>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://kit.fontawesome.com/8df84bb37e.js" crossorigin="anonymous"></script>
+<script src="script/galllery-transition.js"></script>
+<script src="script/album-transition.js"></script>
+  
+<!--Script para a Seta da galeria de fotos do Header-->     
+<script type="text/javascript">
+ 
+       $(window).scroll(function(){
+        
+        if($(document).scrollTop() < 200){
+        
+            $('#btn_Topo').hide();
+
+             
+        } else { 
+         
+         $("#btn_Topo").css({"opacity" : "1"})
+         $('#btn_Topo').show();
+         document.getElementById("btn_Topo").style.zIndex = "10";
+        }    
+    });
+</script>
+
+<!--Script para a Seta da galeria de fotos do Header-->
+<script type="text/javascript">
+       
+   $(window).scroll(function(){
+    
+    if($(document).scrollTop() < 200){
+    
+        $('#h2-gallery').show();
+         
+    } else { 
+       
+     $('#h2-gallery').hide();
+
+    }    
+});
+</script>
+
+<a id="btn_Topo" href="#"><b>&#708;</b></a>
+
+</body>
+</html>

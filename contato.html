@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/Ico/Ico.ico" type="image/x-icon">
+   <title>Contato</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/header-mobile.css">
+   <link rel="stylesheet" href="css/style-social-ico.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/contact.css">
+
+   <style>
+     @import url('https://fonts.googleapis.com/css2? family= Permanent+Marker & família= Rancho &family= Rock+Sal & family= Tapestry & display=swap');
+   </style>
+   
+</head>
+
+<body>
+
+<header>
+      <nav class="nav-mobile" id="nav-mobile">
+      <div class="div-mobile-img">
+         <a href="Index.html" class="div-mobile-logo">
+            <img src="img/Ico/Ico.ico" alt="thesko Fotografia">
+         </a>
+      </div>
+   
+         <input type="checkbox" id="check">
+         <label class="btn-mobile" for="check"><i class="fas fa-bars"></i></label>
+   
+         <ul class="nav-mobile-list">
+            <li><a href="index.html" rel="prev">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://api.whatsapp.com/message/RRPM3F7KBYSIN1?autoload=1&app_absent=0" target="_blank" >Orçamento</a></li>
+            <li><a href="index.html#album" rel="prev">Álbuns</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+         </ul>
+
+      </nav>
+</header>  
+
+<section class="sect-contact" id="sect-contact">
+  
+   <div class="title-contact"><h2>CONTATO</h2></div>
+   <!-- <div class="subtitle-contact"><h3>RESPONDEREI O MAIS BREVE POSSÍVEL.</h3s></div> -->
+   <div class="contact-img"><img src="img/ana-isaque--.jpg" alt=""></div>
+   <div class="contact-h2"><h2>Me mande uma mensagem</h2></div>
+
+      <form class="contact-content">
+
+         <div class="paragraph-contact">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quia consectetur veritatis, aut tenetur libero dolor illum minima itaque fugit iusto rem, nesciunt nam pariatur provident obcaecati eligendi ipsa laborum?</p>
+         </div>
+
+   <div class="contact-form">
+
+      <fieldset class="fieldset-personal-data">
+            <div>
+               <label for="form-name">Nome</label> <br>
+               <input type="text" id="form-name" name="name"> 
+            </div> 
+            
+            <div>
+               <label for="form-email">E-mail</label> <br>
+               <input type="email" id="form-email" name="email">
+            </div>
+    </fieldset>
+
+      <fieldset class="fieldset-email">
+              
+               <div>
+                  <label for="form-assunto">Assunto:</label> <br>
+                  <input type="text" id="form-assunto" name="assunto">
+               </div>
+      </fieldset>
+
+      <fieldset class="fieldset-email-message">
+               <div>
+                  <label for="form-mensage">Mensagem</label> <br>
+                  <textarea name="text-area" id="form-message" cols="117" rows="12"></textarea>
+               </div>
+      </fieldset>
+
+      <div class="btn-submit">
+         <input type="submit" name="btn-submit-form" id="btn-submit-form" value="Enviar" >
+      </div>
+   </div>
+</form>
+
+</section>
+   
+<footer id="myFooter" class="footer">
+        
+      <div class="footer-content">
+         
+            <div class="footer-content-label">
+               <div><label><i class="fa fa-envelope" aria-hidden="true"></i>theskofotografo@gmail.com</label></div>
+               <div><label><i class="fa-brands fa-whatsapp"></i>(62) 9 9556-8608</label></div>
+            </div>
+
+         </div>
+      
+      <div class="footer-content">
+
+         <div class="social-ico">
+            <a href="https://pt-br.facebook.com/theskofotografia/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theskofotografia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@theskofotografia" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCD5k4Q9t51xMLryoAbbDc7Q" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/message/RRPM3F7KBYSIN1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+         </div>
+
+      </div>
+
+      <div class="copyright">
+      <div>
+         <p>Thesko Fotografias</p>
+         <p>criado por Mateus Silva ©</p>
+      </div>
+      
+      </div> 
+</footer>
+
+   
+   <!--
+      OBSERVAÇÃO 
+      É necessário estudar itens relativos a JS
+   -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/8df84bb37e.js" crossorigin="anonymous"></script>
+    <script src="script/galllery-transition.js"></script>
+  
+    <!--Script para a Seta da galeria de fotos do Header-->     
+    <script type="text/javascript">
+ 
+      $(window).scroll(function(){
+       
+       if($(document).scrollTop() < 200){
+       
+           $('#btn_Topo').hide();
+
+            
+       } else { 
+        
+        $("#btn_Topo").css({"opacity" : "1"})
+        $('#btn_Topo').show();
+        document.getElementById("btn_Topo").style.zIndex = "10";
+       }    
+   });
+   </script>
+
+<!--Script para a Seta da galeria de fotos do Header-->
+<script type="text/javascript">
+       
+   $(window).scroll(function(){
+    
+    if($(document).scrollTop() < 200){
+    
+        $('#h2-gallery').show();
+         
+    } else { 
+       
+     $('#h2-gallery').hide();
+
+    }    
+});
+</script>
+<a id="btn_Topo" href="#"><b>&#708;</b></a>
+</body>
+</html>
