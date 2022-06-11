@@ -103,6 +103,7 @@ header {
 
     #btn_Topo {
         opacity: 0;
+        visibility: hidden;
     }
 
     ul.nav-mobile-list {

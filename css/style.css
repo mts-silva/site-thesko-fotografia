@@ -90,47 +90,6 @@ html {
     }
     
 }
-/* 
-@keyframes title-about-animation {
-    0% {
-        text-shadow: 0px 0px 0px rgba(255, 0, 0, 1);
-    }
-    35% {
-        text-shadow: 0px 0px 0px rgba(255, 0, 0, 1);
-    }
-    50% {
-        text-shadow: 1px 1px 5px rgba(255, 0, 0, 1);
-    }
-    55% {
-        text-shadow:1px 1px 10px rgba(255, 0, 0, 1);
-    }
-    60% {
-        text-shadow:1px 1px 15px rgba(255, 0, 0, 1);
-    }
-    65% {
-        text-shadow:1px 1px 20px rgba(255, 0, 0, 1);
-    }
-    70% {
-        text-shadow:1px 1px 25px rgba(255, 0, 0, 1);
-    }
-    80% {
-        text-shadow:1px 1px 20px rgba(255, 0, 0, 1);
-    }
-    85% {
-        text-shadow:1px 1px 15px rgba(255, 0, 0, 1);
-    }
-    90% {
-        text-shadow:1px 1px 10px rgba(255, 0, 0, 1);
-    }
-    95% {
-        text-shadow:1px 1px 5px rgba(255, 0, 0, 1);
-    }
-    100% {
-        text-shadow:( 0px 0px 0px rgba(255, 0, 0, 1));
-    }
-    
-}  */
-
 ::-webkit-scrollbar{
     width: 7px;
     background-image: linear-gradient(to right, rgba(22,22,30), rgba(22, 22, 30));
