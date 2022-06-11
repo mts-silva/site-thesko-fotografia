@@ -38,7 +38,7 @@
     font-size:  45px;
     font-family: 'Neucha', cursiva;
     opacity: 0;
-    animation:  animation-title-about .7s ease-in-out forwards;
+    animation:  animation-title-about .7s .4s ease-in-out forwards;
 }
 
 .about-title-content .about-title-img {

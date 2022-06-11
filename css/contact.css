@@ -32,7 +32,7 @@
     font-family: 'Neucha', cursiva;
     z-index: 1;
     opacity: 0;
-    animation:  animation-title-contact 1s  ease-in-out forwards;
+    animation:  animation-title-contact 1s .4s  ease-in-out forwards;
 }
 .contact-img {
     width: 100vw;
