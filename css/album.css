@@ -309,11 +309,11 @@ div.img-album {
     .container .card {
         width: 350px;
         height: 350px;
-        transform: translateX(0px) rotateY(0deg);
+        transform: translateX(25px) rotateY(40deg);
     }
 
     .container .card:hover {
-        transform: translateX(0px) rotateY(0deg);
+        transform: translateX(25px) rotateY(40deg);
     }
     
 }
