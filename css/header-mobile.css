@@ -215,12 +215,4 @@ header {
 }
 
 
-@media (max-height: 470px) {
-    ul.nav-mobile-list {
-        height: 80vh;
-    }
-
-}
-
-
 

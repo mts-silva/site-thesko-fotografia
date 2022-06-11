@@ -307,8 +307,6 @@ div.img-album {
 @media (max-width: 480px) {
 
     .container .card {
-        width: 350px;
-        height: 350px;
         transform: translateX(25px) rotateY(40deg);
     }
 
