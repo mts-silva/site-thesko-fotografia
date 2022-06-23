@@ -40,6 +40,7 @@
     height: 337px;
     display: flex;
     overflow: hidden;
+    background: rgba(22,22,30);
 }
 
 .contact-img img {
