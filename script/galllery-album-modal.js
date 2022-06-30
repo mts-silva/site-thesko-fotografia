@@ -11,7 +11,11 @@ for ( let i = 0; i < nodeList.length; i++) {
       document.getElementById("inp-modal").checked = true;  
       count = i;
       document.body.style.overflow = "hidden"; //unloadScrollBars
-      
+
+      //o código abaixo esconde o botão top ao selecionar uma imagem
+      if ( document.getElementById("inp-modal").checked ==true) {
+        document.getElementById("btn_Topo").style.display = "none";
+      }
   });
 }
 

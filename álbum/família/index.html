@@ -6,7 +6,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="img/Ico/Ico.ico" type="image/x-icon">
-      <title>Galeria - "nome-album"</title>
+      <title>Álbum - Família</title>
+      <link rel="stylesheet" href="../../css/style.css">
       <link rel="stylesheet" href="../../css/galllery-album-modal.css">
       <link rel="stylesheet" href="../../css/header-mobile.css">
       <link rel="stylesheet" href="../../css/footer.css">
@@ -23,7 +24,7 @@
    <nav class="nav-mobile" id="nav-mobile">
              
       <div class="div-mobile-img">
-         <a href="index.html" class="div-mobile-logo">
+         <a href="../../index.html" class="div-mobile-logo">
             <img src="../../img/Ico/Ico.ico" alt="thesko Fotografia">
          </a>
        </div>
@@ -33,10 +34,10 @@
            
       <ul class="nav-mobile-list">
          <li><a href="../../index.html">Home</a></li>
-         <li><a href="../../contato.html" rel="next">Contato</a></li>
+         <li><a href="../../contato/index.html">Contato</a></li>
          <li><a href="https://api.whatsapp.com/message/RRPM3F7KBYSIN1?autoload=1&app_absent=0" target="_blank" >Orçamento</a></li>
          <li><a href="../../index.html#album">Álbuns</a></li>
-         <li><a href="../../sobre.html" rel="next">Sobre</a></li>
+         <li><a href="../../sobre/index.html" rel="next">Sobre</a></li>
       </ul>
    </nav>
         
@@ -47,7 +48,7 @@
    <input type="checkbox" name="modal" id="inp-modal">
 
       <div class="gallery-album-title-content">
-         <div class="title-img-gallery-album"><img src="" alt=""></div>
+         <!-- <div class="title-img-gallery-album"><img src="../../img/post10.jpg" alt=""></div> -->
          <div class="title-name-gallery-album"><h2>FAMÍLIA</h2></div>
       </div>
 
@@ -92,7 +93,6 @@
    
 </section>
 
-
 <footer id="myFooter" class="footer">
    
    <div class="footer-content">
@@ -125,9 +125,29 @@
 
 </footer>
 
-</body>
-
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="../../script/galllery-album-modal.js"></script>
 <script src="https://kit.fontawesome.com/8df84bb37e.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+ 
+   $(window).scroll(function(){
+    
+    if($(document).scrollTop() < 200){
+    
+        $('#btn_Topo').hide();
+
+         
+    } else { 
+     
+     $("#btn_Topo").css({"opacity" : "1"})
+     $('#btn_Topo').show();
+     document.getElementById("btn_Topo").style.zIndex = "10";
+    }    
+});
+</script>
+
+<a id="btn_Topo" href="#"><b>&#708;</b></a>
+
 </body>
 </html>

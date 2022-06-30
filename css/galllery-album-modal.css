@@ -8,9 +8,9 @@
 .section-gallery-album {
     width: 100vw;
     max-width: 100%;
-    height: 1050px;
+    height: 1150px;
     overflow: hidden;
-    background: rgba(22, 22,30);
+    background: rgba(255, 255,255);
 }
 
 .section-gallery-album input {
@@ -25,7 +25,8 @@
 }
 
 .title-img-gallery-album {
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -43,7 +44,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: linear-gradient(to right, rgba(22,22,30,0.7), rgba(22,22,30,0.7));
+    background: linear-gradient(to right, rgba(22,22,30,0.8), rgba(22,22,30,0.5));
     top: 0;
 }
 
@@ -95,7 +96,6 @@
     transition: .4s all;
 }
 
-
 #nav-bar-ico:checked ~ .navbar-gallery-album {
     width: 250px;
     height: 320px;
@@ -139,18 +139,16 @@
  }
 
 .navbar-gallery-album {
+    margin-top: 25px;
     left: 0;
     position: absolute;
     background: rgba(22, 22,30);
     width: 13vw;
     height: 700px;
-    max-width: 100%;
     align-items: center;
     display: flex;
     justify-content: space-evenly; 
-    border-radius: 0px 0px 10px 0px;
-    border-top: none;
-    border-left: none;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .navbar-gallery-album-content {
@@ -174,7 +172,7 @@
 }
 
 .navbar-gallery-album li:hover {
-    background: rgba(255,0,0,0.8);
+    background: rgba(255,0,0,0.6);
 }
 
 .navbar-gallery-album li a {
@@ -209,20 +207,24 @@
  
 .row-2 {
     grid-row: span 2;
+}
+
+.row-3 {
+    grid-row: span 3;
 } 
 
 .gallery-album-container {
+    margin-top: 25px;
     margin-left: 14vw;
     width: 90vw;
     max-width: 85%;
-    height: 67%;
+    height: 68%;
     overflow: hidden;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-    background: rgba(22,22,30);
+    background: rgba(255,255,255);
 }
-
 
 .gallery-album-container .gallery-album-itens {
     width: auto;
@@ -279,7 +281,7 @@
 .modal-content img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
 }
 
@@ -354,6 +356,9 @@
     right: 2vw;
 }
 
+#close-modal i {
+    font-size: 14px;
+}
 
 @keyframes image-animation {
     0% {
@@ -416,12 +421,9 @@
         border: none;
 
     }
-
-
     .navbar-gallery-album li a {
         font-size: 20px;
     }
-    
     .close-label-nav-bar {
         display: flex;
     }
@@ -431,8 +433,6 @@
         max-width: 96%;
         margin-left: 2vw;
         margin-right: 2vw;
-        /* grid-template-columns: auto auto auto;
-        grid-template-rows: auto; */
     }
 }
 
@@ -446,8 +446,7 @@
     .modal-content {
         width: 80vw;
         height: 75%;
-    }
-    
+    } 
 }
 
 @media (max-width: 680px) {
@@ -462,15 +461,12 @@
     }
 }
 
-
 @media (max-width: 530px) {
     .modal-content {
         width: 90vw;
         height: 90%;
     }
-
     .modal-content img {
         object-fit: contain;
-    }
-    
+    } 
 }
