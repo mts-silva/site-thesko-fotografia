@@ -234,18 +234,14 @@ div.img-album {
 .link-album {
     position: absolute;
     height: 100%;
-    min-height: 100%;
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(to right, rgba(0,0, 0, 0.9),rgba(22,22,30,0.9));
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .3s all;
     left: 0;
-    opacity: 0;   
+    opacity: 1;   
 }
 
 .link-album a {
@@ -299,7 +295,7 @@ div.img-album {
 
 @media (max-width: 550px) { 
     .container .card {
-        transform: translateX(25px) rotateY(40deg);
+        transform: translateX(0px) rotateY(0deg);
     }
 }
 
@@ -307,13 +303,8 @@ div.img-album {
 @media (max-width: 480px) {
 
     .container .card {
-        transform: translateX(25px) rotateY(40deg);
-    }
-
-    .container .card:hover {
-        transform: translateX(25px) rotateY(40deg);
-    }
-    
+        transform: translateX(0px) rotateY(0deg);
+    }    
 }
 
 
